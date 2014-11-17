@@ -1,0 +1,669 @@
+<!DOCTYPE HTML>
+<!--
+Desarrollado por Mozilla, modificado por @psep
+-->
+<html lang="es-CL" class="fade">
+	<head>
+		<title>Soluciones Libres con JEE</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=1274, user-scalable=no">
+		<meta name="author" content="Pablo Sepúlveda - @psep" />
+		<link rel="stylesheet" href="themes/mozilla/styles/style.css">
+	</head>
+	<body class="list">
+
+		<!-- Principal -->
+		<header class="caption">
+			<h1>Soluciones Libres con JEE</h1>
+			<p class="footer">
+				Pablo Sepúlveda
+				<br />
+				<a href="http://twitter.com/psep_cl">@psep_cl en Twitter</a>
+				<br />
+				<a href="mailto:psepulveda@fundaciongnuchile.cl">psepulveda@fundaciongnuchile.cl</a>
+			</p>
+			<p>
+				<button onclick="goFullScreen()">
+					Pantalla completa
+				</button>
+			</p>
+		</header>
+
+		<!-- Slides -->
+		<div id="cover" class="slide">
+			<div>
+				<section>
+					<header>
+						<h2>Soluciones Libres con JEE</h2>
+					</header>
+					<img src="pictures/portada.png" class="middle shadow" alt="High-five at the Mozilla Festival!" height="400">
+					<small class="byline"> Pablo Sepúlveda, Fundación GNUCHILE, Primera Jornada del Software Libre, INACAP Maipú, 19 de Noviembre de 2014 </small>
+					<footer class="notes">
+
+					</footer>
+				</section>
+			</div>
+		</div>
+
+		<div id="fs" class="slide shout">
+			<div>
+				<section>
+					<header>
+						<h2 style="font-size: 2em;">Antes que nada...
+						<br />
+						¿Qué es el Software Libre?</h2>
+					</header>
+					<footer class="notes">
+
+					</footer>
+				</section>
+			</div>
+		</div>
+
+		<div id="fs-history" class="slide">
+			<div>
+				<section>
+					<header>
+						<h2>Software Libre, algo de historia...</h2>
+					</header>
+					<figure class="right shadow frame">
+						<img src="pictures/Heckert_GNU.png" alt="Proyecto GNU" height="200">
+					</figure>
+					<ul>
+						<li>
+							Proyecto GNU:
+							<ul>
+								<li>
+									Fundado en 1984 por Richard Stallman.
+								</li>
+								<li>
+									GNU es un acrónimo que significa "<strong>GNU No es Unix</strong>".
+								</li>
+								<li>
+									Consiste en crear un sistema operativo libre con todos sus componentes
+									(intérpretes, compiladores, editores de texto, kernel, gestores de correo, etc).
+								</li>
+								<li>
+									El primer compilador(es) libre(s), GCC (GNU Compiler Collection).
+								</li>
+								<li>
+									Web: <a href="http://www.gnu.org" alt="Proyecto GNU" target="_blank">http://www.gnu.org</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<footer class="notes">
+
+					</footer>
+				</section>
+			</div>
+		</div>
+
+		<div id="fs-history-2" class="slide">
+			<div>
+				<section>
+					<header>
+						<h2>Software Libre, algo de historia...</h2>
+					</header>
+					<figure class="right shadow frame">
+						<img src="pictures/fsf.png" alt="Free Software Foundation" height="180">
+					</figure>
+					<ul>
+						<li>
+							Free Software Foundation:
+							<ul>
+								<li>
+									Creada en 1985 por Richard Stallman.
+								</li>
+								<li>
+									<strong>Definición de Software libre</strong> y el concepto <strong>Copyleft</strong>.
+								</li>
+								<li>
+									Difusión del movimiento del software libre a nivel mundial.
+								</li>
+								<li>
+									Mantención de proyectos, licencias GPL, campañas de defensa y promoción de software libre.
+								</li>
+								<li>
+									Web: <a href="http://www.fsf.org" alt="Free Software Foundation" target="_blank">http://www.fsf.org</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<footer class="notes">
+
+					</footer>
+				</section>
+			</div>
+		</div>
+
+		<div id="freedom" class="slide">
+			<div>
+				<section>
+					<header>
+						<h2>Las cuatro libertades del Software</h2>
+					</header>
+					<ul class="inner">
+						<li class="active">
+							La libertad para <strong>ejecutar</strong> el programa como usted desee y para cualquier propósito.
+						</li>
+						<li>
+							La libertad de <strong>estudiar</strong> cómo funciona el programa, y cambiarlo para que haga lo que usted quiera.
+						</li>
+						<li>
+							La libertad para <strong>copiar</strong> el programa y distribuirlo como usted guste.
+						</li>
+						<li>
+							La libertad para <strong>modificar</strong> el programa y distribuirlo con dichas modificaciones.
+						</li>
+					</ul>
+					<footer class="notes">
+
+					</footer>
+				</section>
+			</div>
+		</div>
+
+		<div id="copyleft" class="slide">
+			<div>
+				<section>
+					<header>
+						<h2>Copyright vs. Copyleft</h2>
+					</header>
+					<blockquote>
+						El copyright no es un derecho natural sino un monopolio artificial
+						impuesto por el Estado que limita el derecho natural de los usuarios a copiar.
+					</blockquote>
+					<small class="byline">Richard Matthew Stallman</small>
+					<footer class="notes">
+
+					</footer>
+				</section>
+			</div>
+		</div>
+
+		<div id="licencias" class="slide">
+			<div>
+				<section>
+					<header>
+						<h2>Licencias Libres</h2>
+					</header>
+					<img src="pictures/licenses/licencias.png" class="middle" width="400" alt="licencias libres">
+					<small class="byline">Más info en <a href="https://www.gnu.org/licenses/license-list.es.html" target="_blank" alt="Licencias libres"> https://www.gnu.org/licenses/license-list.es.html </a> </small>
+					<footer class="notes">
+
+					</footer>
+				</section>
+			</div>
+		</div>
+
+		<div id="gnulinux" class="slide">
+			<div>
+				<section>
+					<header>
+						<h2>GNU con Linux</h2>
+					</header>
+					<figure class="right shadow frame">
+						<img src="pictures/gnulinux.png" alt="Duo Dinámico" height="200">
+					</figure>
+					<ul>
+						<li>
+							A principios de la decáda del 90, el Proyecto GNU estaba casi completo con el sistema operativo,
+							pero faltaba el kernel. El núcleo original del proyecto es Hurd.
+						</li>
+						<li>
+							En 1991, Linus Torvalds libera el kernel Linux bajo licencia GNU GPL. Reemplazo no comercial de MINIX.
+						</li>
+						<li>
+							Gracias a lo anterior, nace GNU/Linux, que es la combinación del kernel Linux con el Sistema GNU.
+						</li>
+					</ul>
+					<footer class="notes">
+
+					</footer>
+				</section>
+			</div>
+		</div>
+
+		<div id="opensource-vs-freesoftware" class="slide">
+			<div>
+				<section>
+					<header>
+						<h2>Software Libre vs Open Source</h2>
+					</header>
+					<img src="pictures/open-source-vs-free-software-tim-oreilly-richard-stallman-4852.jpg"
+					class="middle" width="450" alt="Open Source vs Free Software">
+					<footer class="notes">
+
+					</footer>
+				</section>
+			</div>
+		</div>
+
+		<div id="campanias" class="slide">
+			<div>
+				<section>
+					<header>
+						<h2>Activismo y Campañas</h2>
+					</header>
+					<img src="pictures/activismo.jpg" class="middle" width="500" alt="Activismo">
+					<small class="byline">En el lanzamiento de Windows 8, puedes revisar más campañas en <a href="http://www.defectivebydesign.org/" alt="Defective by Design" target="_blank">http://www.defectivebydesign.org/</a> </small>
+					<footer class="notes">
+
+					</footer>
+				</section>
+			</div>
+		</div>
+
+		<div id="jee-cover" class="slide shout">
+			<div>
+				<section>
+					<header>
+						<h2 style="font-size: 2em;">¿JEE? A lo nuestro...</h2>
+					</header>
+					<footer class="notes">
+
+					</footer>
+				</section>
+			</div>
+		</div>
+
+		<div id="jee-is" class="slide">
+			<div>
+				<section>
+					<header>
+						<h2>¿Qué es JEE?</h2>
+					</header>
+					<ul class="inner">
+						<li class="active">
+							Significa Java Enterprise Edition.
+						</li>
+						<li>
+							Se rige bajo especificaciones y estándares abiertos bajo la Java Community Process (JCP).
+						</li>
+						<li>
+							APIs estándar (EJB, JDBC, Persistencia, JMS, etc).
+						</li>
+						<li>
+							Hoy en día, la plataforma líder a nivel empresarial.
+						</li>
+					</ul>
+					<footer class="notes">
+
+					</footer>
+				</section>
+			</div>
+		</div>
+
+		<div id="jee-privative" class="slide">
+			<div>
+				<section>
+					<header>
+						<h2>JEE abierto, ¿Plataformas Privativas?</h2>
+					</header>
+					<figure class="right shadow frame">
+						<img src="pictures/java.png" alt="Free Software Foundation" height="180">
+					</figure>
+					<ul>
+						<li>
+							Existen variadas alternativas en el mercado, incluyendo las soluciones no libres.
+						</li>
+						<li>
+							Al tener licencia Apache, permite el software privativo.
+						</li>
+						<li>
+							Ejemplos como Oracle Middleware y Weblogic, IBM Websphere. Con sus IDEs
+							respectivos como Oracle JDeveloper.
+						</li>
+						<li>
+							Buena parte del mercado está dominado por dichas marcas.
+						</li>
+					</ul>
+					<footer class="notes">
+
+					</footer>
+				</section>
+			</div>
+		</div>
+
+		<div id="jee-privative-2" class="slide">
+			<div>
+				<section>
+					<header>
+						<h2>JEE abierto, ¿Plataformas Privativas?</h2>
+					</header>
+					<figure class="right shadow frame">
+						<img src="pictures/java.png" alt="Free Software Foundation" height="180">
+					</figure>
+					<ul>
+						<li>
+							¿Por qué las soluciones no libres dominan el mercado?
+						</li>
+						<ul>
+							<li>
+								Respaldo de grandes marcas.
+							</li>
+							<li>
+								Experiencia y madurez en sus plataformas (?)
+							</li>
+							<li>
+								Lobby y otras prácticas (?)
+							</li>
+							<li>
+								Soluciones empresariales enfocadas en <strong>SOA</strong>.
+							</li>
+						</ul>
+					</ul>
+					<footer class="notes">
+
+					</footer>
+				</section>
+			</div>
+		</div>
+
+		<div id="soa-is" class="slide">
+			<div>
+				<section>
+					<header>
+						<h2>¿Qué es SOA?</h2>
+					</header>
+					<ul>
+						<li>
+							Arquitectura Orientada a Servicios.
+						</li>
+						<li>
+							Paradigma enfocado a sistemas distribuidos y la abstracción.
+						</li>
+						<li>
+							Permite escalabilidad, flexbilidad e integración entre sistemas.
+						</li>
+						<li>
+							Abstracción de procesos y reglas de negocio como servicios.
+						</li>
+						<li>
+							Aborda situaciones reales como el encapsulamiento, desacoplamiento, reutilización.
+						</li>
+					</ul>
+					<footer class="notes">
+
+					</footer>
+				</section>
+			</div>
+		</div>
+
+		<div id="soa-diagram" class="slide">
+			<div>
+				<section>
+					<header>
+						<h2>Arquitectura SOA de Referencia</h2>
+					</header>
+					<img src="pictures/Arquitectura.jpg" class="middle" width="500" alt="Activismo">
+					<footer class="notes">
+
+					</footer>
+				</section>
+			</div>
+		</div>
+
+		<div id="soa-capas" class="slide">
+			<div>
+				<section>
+					<header>
+						<h2>Arquitectura SOA de Referencia</h2>
+					</header>
+					<ul>
+						<li>
+							Capa de Visualización: Interfáz hacia el usuario (mediante un servidor de aplicaciones).
+						</li>
+						<li>
+							Orquestación: Dirige los servicios. Estos son mediante BPM (y/o BPEL).
+							Los procesos de negocio son abstraídos de las reglas de negocio (Motor de Reglas).
+						</li>
+						<li>
+							ESB: Bus de Servicio. Es donde se exponen y disponibilizan los servicios.
+							El bus transforma y enriquece los datos.
+						</li>
+					</ul>
+					<footer class="notes">
+
+					</footer>
+				</section>
+			</div>
+		</div>
+
+		<div id="alternativas-libres" class="slide">
+			<div>
+				<section>
+					<header>
+						<h2>Alternativas Libres</h2>
+					</header>
+					<ul>
+						<li>
+							<strong>Capa de Visualización:</strong> JBoss AS (EAP), WSO2 Application Server,
+							GlassFish*, Apache TomEE, Apache Gerónimo.
+						</li>
+						<li>
+							<strong>Orquestación:</strong>
+							<ul>
+								<li>
+									<strong>BPM:</strong> JBoss BPM Suite, W2O2 Business Process Server.
+								</li>
+								<li>
+									<strong>Motor de Reglas:</strong> JBoss BRMS (integrado en BPM Suite), WSO2 Business Rules Server.
+								</li>
+							</ul>
+						</li>
+						<li>
+							<strong>ESB:</strong> JBoss Fuse, WSO2 Enterprise Service Bus.
+						</li>
+						<li>
+							<strong>IDEs:</strong> Eclipse, JBoss Developer Studio, NetBeans, WSO2 Developer Studio.
+						</li>
+					</ul>
+					<footer class="notes">
+
+					</footer>
+				</section>
+			</div>
+		</div>
+
+		<div id="jboss-developer-studio" class="slide h cover">
+			<div>
+				<section>
+					<header>
+						<h2>JBoss Developer Studio</h2>
+					</header>
+					<img src="pictures/jdev.png" alt="JBoss Developer Studio"
+					class="middle shadow" height="450"/>
+					<footer class="notes">
+
+					</footer>
+				</section>
+			</div>
+		</div>
+
+		<div id="jboss-eap" class="slide">
+			<div>
+				<section>
+					<header>
+						<h2>JBoss AS (EAP)</h2>
+					</header>
+					<img src="pictures/eap_architecture.png" alt="JBoss EAP"
+					class="middle shadow" height="380"/>
+					<small class="byline">Servidor de Aplicaciones: Software Libre + Estándares Abiertos</small>
+					<footer class="notes">
+
+					</footer>
+				</section>
+			</div>
+		</div>
+
+		<div id="jboss-bpm" class="slide h cover">
+			<div>
+				<section>
+					<header>
+						<h2>JBoss BPM Suite</h2>
+					</header>
+					<img src="pictures/bpm-suite.png" alt="JBoss BPM Suite"
+					class="middle shadow" height="450"/>
+					<footer class="notes">
+
+					</footer>
+				</section>
+			</div>
+		</div>
+
+		<div id="jboss-esb" class="slide">
+			<div>
+				<section>
+					<header>
+						<h2>JBoss Fuse</h2>
+					</header>
+					<img src="pictures/fuse.png" alt="JBoss Fuse"
+					class="middle shadow" height="350"/>
+					<small class="byline">ESB: Software Libre + Estándares Abiertos</small>
+					<footer class="notes">
+
+					</footer>
+				</section>
+			</div>
+		</div>
+
+		<div id="business" class="slide">
+			<div>
+				<section>
+					<header>
+						<h2>Alternativas Libres</h2>
+					</header>
+					<figure class="right shadow frame">
+						<img src="pictures/jboss.png" alt="JBoss" height="150">
+					</figure>
+					<ul>
+						<li>
+							JBoss y WSO2 cuentan con presencia en el sector público y privado.
+						</li>
+						<li>
+							Modelo de Negocio: Suscripción.
+						</li>
+						<li>
+							Ventajas:
+							<ul>
+								<li>
+									Software libre.
+								</li>
+								<li>
+									Soporte empresarial y comunitario.
+								</li>
+								<li>
+									Costos en comparación con la competencia (software privativo).
+								</li>
+								<li>
+									Desarrollo y mejora constante.
+								</li>
+								<li>
+									Más implementadores.
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<footer class="notes">
+
+					</footer>
+				</section>
+			</div>
+		</div>
+
+		<div id="community-jboss" class="slide h cover">
+			<div>
+				<section>
+					<header>
+						<h2><a href="https://community.jboss.org/" alt="Comunidad JBoss " target="_blank"> https://community.jboss.org/ </a></h2>
+					</header>
+					<img src="pictures/comunidad.png" alt="JBossDeveloper"
+					class="middle shadow" height="450"/>
+					<footer class="notes">
+
+					</footer>
+				</section>
+			</div>
+		</div>
+
+		<div id="docs" class="slide">
+			<div>
+				<section>
+					<header>
+						<h2>Documentación</h2>
+					</header>
+					<ul>
+						<li>
+							<a href="http://www.gnu.org/">http://www.gnu.org/</a>
+						</li>
+						<li>
+							<a href="http://www.fsf.org/">http://www.fsf.org/</a>
+						</li>
+						<li>
+							<a href="https://docs.oracle.com/javaee/6/tutorial/doc/">https://docs.oracle.com/javaee/6/tutorial/doc/</a>
+						</li>
+						<li>
+							<a href="https://jcp.org/en/jsr/overview">https://jcp.org/en/jsr/overview</a>
+						</li>
+						<li>
+							<a href="https://www.redhat.com/en">https://www.redhat.com/en</a>
+						</li>
+						<li>
+							<a href="http://www.jboss.org/">http://www.jboss.org/</a>
+						</li>
+						<li>
+							<a href="http://wso2.com/">http://wso2.com/</a>
+						</li>
+					</ul>
+					<footer class="notes">
+
+					</footer>
+				</section>
+			</div>
+		</div>
+
+		<div id="thanks" class="slide">
+			<div>
+				<section>
+					<header>
+						<h2>Muchas Gracias</h2>
+					</header>
+					<figure class="frame middle swing">
+						<img src="pictures/iso.png" alt="GNUCHILE">
+					</figure>
+					<ul class="oneline demourl">
+						<li>
+							Pablo Sepúlveda
+						</li>
+						<li>
+							<a href="http://twitter.com/psep_cl">@psep_cl</a>
+						</li>
+						<li>
+							<a href="http://www.psep.cl">http://www.psep.cl</a>
+						</li>
+						<li>
+							<a href="http://www.gnuchile.cl">http://www.gnuchile.cl</a>
+						</li>
+						<li>
+							<a href="mailto:psepulveda@fundaciongnuchile.cl">psepulveda@fundaciongnuchile.cl</a>
+						</li>
+					</ul>
+					<small class="credits"> <a href="http://creativecommons.org/licenses/by-sa/3.0/cl/">Bajo licencia CC By-Sa 3.0</a></small>
+					<footer class="notes">
+
+					</footer>
+				</section>
+			</div>
+		</div>
+
+		<div class="progress">
+			<div>
+
+			</div>
+		</div>
+		<script src="scripts/script.js"></script>
+		<!-- Copyright © 2010–2012 Vadim Makeev — pepelsbey.net -->
+	</body>
+</html>
